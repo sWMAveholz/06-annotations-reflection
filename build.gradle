@@ -19,6 +19,8 @@ dependencies {
     implementation("org.apache.commons:commons-lang3:$commons_lang3_version")
     implementation("org.apache.logging.log4j:log4j-api:${log4j2Version}")
     implementation("org.apache.logging.log4j:log4j-core:${log4j2Version}")
+	compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
+	implementation 'com.squareup.retrofit2:retrofit:2.6.1'
 
     testCompile("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntime("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
